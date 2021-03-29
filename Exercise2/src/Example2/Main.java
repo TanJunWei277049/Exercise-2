@@ -2,23 +2,24 @@ package Example2;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {		
 		
-		Phone a = new Phone();
+		MyDog a = new MyDog();
+		AliDog b = new AliDog();
 		
-		System.out.println("The phone color is " + a.color);
-		System.out.println("The phone brand is " + a.brand);
-		System.out.println("The phone storage is " + a.storage + "gb");
+		System.out.println("Number of eyes for my dog is " + a.eyes);
+		System.out.println("Number of legs for my dog is " + a.legs);
+		System.out.println("Size of my dog is " + a.size);
 		
-		a.makeCall();
-		a.playMusic();
-		a.takePicture();
+		a.walk();
+		a.sleep();
+		a.bark();
 		
-		Dog b = new Dog();
+		System.out.println();
 		
-		System.out.println("Number of eyes for dog is " + b.eyes);
-		System.out.println("Number of legs for dog is " + b.legs);
-		System.out.println("Size of a dog is " + b.size);
+		System.out.println("Number of eyes for Ali's dog is " + b.eyes);
+		System.out.println("Number of legs for Ali's dog is " + b.legs);
+		System.out.println("Size of Ali's dog is " + b.size);
 		
 		b.walk();
 		b.sleep();

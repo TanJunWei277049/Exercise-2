@@ -32,18 +32,18 @@ public class Bird {
 	}
 	
 	public String getName() {
-		return name;
+		return this.name;
 	}
 	
 	public String getColor() {
-		return color;
+		return this.color;
 	}
 	
 	public char getSize() {
-		return size;
+		return this.size;
 	}
 	
 	public double getWeight() {
-		return weight;
+		return this.weight;
 	}
 }

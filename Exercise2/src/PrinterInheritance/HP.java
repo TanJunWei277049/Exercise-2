@@ -1,13 +1,17 @@
 package PrinterInheritance;
 
+import java.util.Scanner;
+
 public class HP extends Printer{
 
+	Scanner input = new Scanner(System.in);
 	private double price;
 	
-	public HP(double w, double n, double p) {
+	public HP() {
 		
-		super(w,n);
-		price = p;
+		super();
+		System.out.println("Enter price :");
+		price = input.nextDouble();
 		
 	}
 	

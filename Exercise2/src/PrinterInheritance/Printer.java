@@ -1,13 +1,17 @@
 package PrinterInheritance;
 
+import java.util.Scanner;
+
 public class Printer {
+	Scanner input = new Scanner(System.in);
 	
 	private double weight;
 	private double num;
 	
-	public Printer(double w, double n) {
-		weight = w;
-		num = n;
+	public Printer() {
+		System.out.println("Enter weight and number of printer :");
+		weight = input.nextDouble();
+		num = input.nextDouble();
 	}
 	
 	public double getWeight(){

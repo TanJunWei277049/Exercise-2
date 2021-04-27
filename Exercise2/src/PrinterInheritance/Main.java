@@ -3,7 +3,6 @@ package PrinterInheritance;
 public class Main {
 
 	public static void main(String[] args) {
-		double w,n,p;
 		
 		
 		Printer objPrint = new Printer();

@@ -20,6 +20,6 @@ public class greenApple extends Apple{
 	
 	public String toString() {
 		return super.toString()+"\n"+
-			   super.getName()+" weight(g) : "+getWeight();
+			   super.getName()+" weight : "+getWeight() + "g";
 	}
 }

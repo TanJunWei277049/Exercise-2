@@ -9,7 +9,7 @@ public class Main {
 		System.out.println("Total price for 5 apple is RM" + a.totalPrice(5));
 		System.out.println();
 		
-		Orange o = new Orange("Orange","Japan",12);
+		Orange o = new Orange("Orange","Japan",12,72,12);
 		System.out.println(o);
 		System.out.println();
 		

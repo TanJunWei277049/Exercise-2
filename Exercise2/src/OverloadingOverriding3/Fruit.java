@@ -8,5 +8,8 @@ public class Fruit {
 		System.out.println(name +" constructor is invoked");
 	}
 
+	public String plastic() {  //overriding
+		return "Yes";
+	}
 
 }

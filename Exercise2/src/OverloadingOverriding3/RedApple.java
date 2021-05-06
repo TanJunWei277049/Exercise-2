@@ -13,7 +13,11 @@ public class RedApple extends Apple{
 		return this.country;
 	}
 	
-	public String toString() {
+	public String plastic() {  //overriding
+		return "No";
+	}
+	
+	public String toString() {  //overriding
 		return "Red Apple is my favourite fruit";
 	}
 }

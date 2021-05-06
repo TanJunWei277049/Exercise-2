@@ -49,7 +49,11 @@ public class Apple extends Fruit {
 		return (newP*quantity)*(1-discount);
 	}
 	
-	public String toString() {
+	public String plastic() {  //overriding
+		return "Yes";
+	}
+	
+	public String toString() {  //overriding
 		return "Apple is my favourite fruit";
 	}
 }

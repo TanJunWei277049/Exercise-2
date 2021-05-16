@@ -4,7 +4,7 @@ public abstract class Fruit {  //define superclass as abstract class
 
 	private String name;
 	
-	public Fruit(String name){
+	public Fruit(String name){ //constructor
 		this.name = name;
 	}
 	

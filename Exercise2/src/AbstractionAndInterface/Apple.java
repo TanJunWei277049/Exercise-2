@@ -5,13 +5,13 @@ public class Apple extends Fruit{
 	private int quantity;
 	private double price;
 
-	public Apple(String name, int q, double p) {
+	public Apple(String name, int q, double p) { //constructor
 		super(name);
 		this.quantity = q;
 		this.price = p;
 		
 		if(quantity<=5) {
-			totalPrice();
+			totalPrice(); //overloading with no argument
 			System.out.println("Type\t\t: "+name);
 			System.out.println("Quantity\t: "+quantity);
 			System.out.println("Unit Price\t: RM "+price);
@@ -19,8 +19,8 @@ public class Apple extends Fruit{
 			System.out.println("Do you want a plastic: " + plastic());
 		}
 		else if(quantity>5&&quantity<=10) {
-			double newP=2.00;
-			totalPrice(newP);
+			double newP=2.00; // set new price
+			totalPrice(newP);//overloading with 1 argument
 			System.out.println("Type\t\t: "+name);
 			System.out.println("Quantity\t: "+quantity);
 			System.out.println("Unit Price\t: RM "+newP);
@@ -28,10 +28,10 @@ public class Apple extends Fruit{
 			System.out.println("Do you want a plastic: " + plastic());
 		}
 		else {
-			double newP=1.50;
+			double newP=1.50; // set new price
 			Discount a = new AppleDiscount();
-			double discount = a.rateOfDiscount();
-			totalPrice(newP,discount);
+			double discount = a.rateOfDiscount(); // set discount rate
+			totalPrice(newP,discount); //overloading with 2 argument
 			System.out.println("Type\t\t: "+name);
 			System.out.println("Quantity\t: "+quantity);
 			System.out.println("Unit Price\t: RM "+newP);

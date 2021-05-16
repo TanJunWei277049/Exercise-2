@@ -13,8 +13,9 @@ public class Durian extends Fruit{
 		this.calory = c;
 		
 		if(weight<=30) {
-			totalPrice();
-			calory();
+			totalPrice(); // overloading with no argument
+			calory();// overloading with no argument
+			
 			System.out.println("Type\t\t: "+name);
 			System.out.println("Weight\t\t: "+weight);
 			System.out.println("Unit Price\t: RM "+price);
@@ -24,9 +25,10 @@ public class Durian extends Fruit{
 		}
 		else if(weight>30&&weight<=50) {
 			double newP=25;
-			totalPrice(newP);
+			totalPrice(newP);  // overloading with 1 argument
 			double newCalory = 51.6;
-			calory(newCalory);
+			calory(newCalory);  // overloading with 1 argument
+			
 			System.out.println("Type\t\t: "+name);
 			System.out.println("Weight\t\t: "+weight);
 			System.out.println("Unit Price\t: RM "+newP);
@@ -35,12 +37,13 @@ public class Durian extends Fruit{
 			System.out.println("Do you want a plastic: " + plastic());
 		}
 		else {
-			double newP=21;
+			double newP=21;  // set new price
 			Discount d = new DurianDiscount();
 			double discount = d.rateOfDiscount();
-			totalPrice(newP,discount);
-			double newCalory = 62.3;
-			calory(newCalory);
+			totalPrice(newP,discount);  // overloading with 2 argument
+			double newCalory = 62.3;  // set new calory
+			calory(newCalory);  // overloading with 1 argument
+			
 			System.out.println("Type\t\t: "+name);
 			System.out.println("Weight\t: "+weight);
 			System.out.println("Unit Price\t: RM "+newP);
